@@ -123,6 +123,7 @@ resource "aws_eks_addon" "ebs-csi" {
   }
 }
 
+## code to make rule, policy and deploy the Application Load Balancer Controller
 data "aws_iam_policy_document" "aws_load_balancer_controller_assume_role_policy" {
   statement {
     actions = ["sts:AssumeRoleWithWebIdentity"]
